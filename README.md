@@ -1,5 +1,4 @@
-<div style="background-color:lightblue; padding:20px;">
-</div>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
 
 # Data Collection Lab - 094290
 ### Winter 2023/24
