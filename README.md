@@ -1,3 +1,6 @@
+<div style="background-color:lightblue; padding:20px;">
+</div>
+
 # Data Collection Lab - 094290
 ### Winter 2023/24
 
