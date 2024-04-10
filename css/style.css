@@ -1,0 +1,55 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+h1, h2, h3 {
+    color: #007bff;
+}
+
+/* Paragraph styles */
+p {
+    margin-bottom: 20px;
+}
+
+/* List styles */
+ul, ol {
+    margin-bottom: 20px;
+}
+
+/* Link styles */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Code block styles */
+pre {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Blockquote styles */
+blockquote {
+    border-left: 4px solid #007bff;
+    padding-left: 15px;
+    margin-left: 0;
+}
+
