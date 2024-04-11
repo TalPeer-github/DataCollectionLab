@@ -7,7 +7,6 @@ import matplotlib.pyplot as plt
 st.set_page_config(
     page_title="Data Collection Lab - AI Requirments Analyzer",
     page_icon="🏂",
-    layout="wide",
     initial_sidebar_state="expanded")
 
 alt.themes.enable("dark")
