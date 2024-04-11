@@ -54,20 +54,12 @@ def plot_skills(position_title):
     num_skills_to_display = min(15, len(skills_df))
     skills_df = skills_df.iloc[-num_skills_to_display:]
 
-    fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(15, 5))
+    fig, axes = plt.subplots(nrows=1, ncols=1, figsize=(15, 5))
 
     axes[0].barh(skills_df['skill'], skills_df['p'], color='#A3816A', edgecolor='#0A065D', alpha=0.8)
     axes[0].set_xlabel('Percentage (%)')
     axes[0].set_ylabel('Skill')
     axes[0].set_title(f'Top Skills for {position_title} (%)')
-
-    education_counts = position_data['education'].iloc[0]
-    summary_text = "Try"
-    max_text_width = 50
-    wrapped_text = textwrap.fill(summary_text, width=max_text_width)
-    axes[1].axis('off')
-    axes[1].text(0.5, 0.5, wrapped_text, fontsize=12, ha='center', va='center', fontfamily='Arial',
-                 fontweight='bold', wrap=True)
 
     st.pyplot(fig)
 
