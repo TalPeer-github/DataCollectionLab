@@ -12,9 +12,9 @@ alt.themes.enable("dark")
 
 
 df_reshaped = pd.read_csv('data/final_EM.csv')
-df_reshaped['education'] =df_reshapes['education'].apply(ast.literal_eval)
-df_reshaped['skills'] =df_reshapes['skills'].apply(ast.literal_eval)
-df_reshaped['years_of_experience'] =df_reshapes['years_of_experience'].apply(ast.literal_eval)
+df_reshaped['education'] =df_reshaped['education'].apply(ast.literal_eval)
+df_reshaped['skills'] =df_reshaped['skills'].apply(ast.literal_eval)
+df_reshaped['years_of_experience'] =df_reshaped['years_of_experience'].apply(ast.literal_eval)
 
 positions_list = list(df_reshaped['position'].unique())[::-1]
 
