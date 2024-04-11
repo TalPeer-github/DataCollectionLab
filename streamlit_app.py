@@ -24,7 +24,7 @@ st.header('Position Selection')
 st.write('Please select a position from the list below:')
 selected_position = st.selectbox('Select Position', positions_list)
 
-st.write(f'You selected: {selected_position}')
+st.title(f'You selected: {selected_position}')
 colors = ['#164863', '#427D9D', '#9BBEC8', '#DDF2FD', '#F2EBE9', '#6B818C']
 
 def plot_education(position_title):
