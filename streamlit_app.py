@@ -20,7 +20,7 @@ df_reshaped['years_of_experience'] =df_reshaped['years_of_experience'].apply(ast
 
 positions_list = list(df_reshaped['position'].unique())[::-1]
 
-st.title('Position Selection')
+st.header('Position Selection')
 st.write('Please select a position from the list below:')
 selected_position = st.selectbox('Select Position', positions_list)
 
