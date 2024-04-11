@@ -11,7 +11,7 @@ st.set_page_config(
     initial_sidebar_state="expanded")
 
 alt.themes.enable("dark")
-
+st.title("Data Collection Lab")
 
 df_reshaped = pd.read_csv('data/final_EM.csv')
 df_reshaped['education'] =df_reshaped['education'].apply(ast.literal_eval)
