@@ -128,14 +128,14 @@ def plot_experience(position_title):
     st.pyplot(fig)
 
 container1 = st.container(border=True)
+st.write(position_summaries[selected_position]['education_summary'])
 with container1:
     plot_education(selected_position)
-    st.write(position_summaries[selected_position]['education_summary'])
 container2 = st.container(border=True)
+st.write(position_summaries[selected_position]['skills_summary'])
 with container2:
-    st.write(position_summaries[selected_position]['skills_summary'])
     plot_skills(selected_position)
 container3 = st.container(border=True)
+st.write(position_summaries[selected_position]['experience_summary'])
 with container3:
-    st.write(position_summaries[selected_position]['experience_summary'])
     plot_experience(selected_position)
