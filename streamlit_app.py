@@ -35,7 +35,7 @@ def plot_education(position_title):
     all_other_count = sum(sorted_education_counts.values()) - sum(top_5_education.values())
     combined_education_counts = {**top_5_education, 'All Other': all_other_count}
 
-    fig, ax = plt.subplots(figsize=(8, 6))
+    fig, ax = plt.subplots(figsize=(6, 4))
     ax.pie(combined_education_counts.values(), labels=combined_education_counts.keys(), autopct='%1.1f%%',
            startangle=140, colors=colors)
     ax.set_title(f"Educational Levels for {position_title}")
@@ -54,7 +54,7 @@ def plot_skills(position_title):
     num_skills_to_display = min(15, len(skills_df))
     skills_df = skills_df.iloc[-num_skills_to_display:]
 
-    fig, axes = plt.subplots(nrows=1, ncols=1, figsize=(15, 5))
+    fig, axes = plt.subplots(nrows=1, ncols=1, figsize=(10, 5))
 
     plt.barh(skills_df['skill'], skills_df['p'], color='#A3816A', edgecolor='#0A065D', alpha=0.8)
     plt.xlabel('Percentage (%)')
@@ -67,7 +67,7 @@ def plot_experience(position_title):
     position_data = df_reshaped[df_reshaped['position'] == position_title]
     years_of_experience = position_data['years_of_experience']
 
-    fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(15, 5))
+    fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(10, 5))
 
     axes[0].hist(years_of_experience, bins=15, color='#A3816A', edgecolor='#0A065D')
     axes[0].set_title(f"Years of Experience for {position_title}")
