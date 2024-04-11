@@ -25,6 +25,7 @@ st.write('Please select a position from the list below:')
 selected_position = st.selectbox('Select Position', positions_list)
 
 st.write(f'You selected: {selected_position}')
+colors = ['#164863', '#427D9D', '#9BBEC8', '#DDF2FD', '#F2EBE9', '#6B818C']
 
 def plot_education(position_title):
     position_data = df_reshaped[df_reshaped['position'] == position_title]
@@ -34,10 +35,9 @@ def plot_education(position_title):
     all_other_count = sum(sorted_education_counts.values()) - sum(top_5_education.values())
     combined_education_counts = {**top_5_education, 'All Other': all_other_count}
 
-    # Plot pie chart
     fig, ax = plt.subplots(figsize=(8, 6))
     ax.pie(combined_education_counts.values(), labels=combined_education_counts.keys(), autopct='%1.1f%%',
-           startangle=140)
+           startangle=140, colors=colors)
     ax.set_title(f"Educational Levels for {position_title}")
     ax.axis('equal')
     st.pyplot(fig)
