@@ -20,8 +20,6 @@ st.write('Please select a position from the list below:')
 selected_position = st.selectbox('Select Position', positions_list)
 
 st.write(f'You selected: {selected_position}')
-selected_position = st.selectbox('Select Position', positions_list)
-
 
 def plot_education(position_title):
     position_data = df_reshaped[df_reshaped['position'] == position_title]
