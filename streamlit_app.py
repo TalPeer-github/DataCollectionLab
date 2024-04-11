@@ -11,7 +11,7 @@ st.set_page_config(
     initial_sidebar_state="expanded")
 
 alt.themes.enable("dark")
-st.title("Data Collection Lab - Interact with our data!")
+st.title("Data Collection group 37 - Time to explore our data!")
 
 good_positions = ['Data Scientist', 'Data Engineer', 'Accountant', 'Software Architect','Java Developer','Facilities Project Manager','Licensed Therapist','Division Manager']
 position_summaries = {
@@ -70,7 +70,7 @@ st.header('Position Selection')
 st.write('Please select a position from the list below:')
 selected_position = st.selectbox('Select Position', positions_list)
 
-st.subheader(f'You selected: {selected_position}')
+st.subheader(f'You selected: {selected_position}\n')
 colors = ['#164863', '#427D9D', '#9BBEC8', '#DDF2FD', '#F2EBE9', '#6B818C']
 
 def plot_education(position_title):
