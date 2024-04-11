@@ -21,14 +21,14 @@ https://datacollectionlab-pmnez6c6fd3cimjg5oqtov.streamlit.app/
 ![header](https://capsule-render.vercel.app/api?type=soft&color=293B5F&height=45&section=header&text=Dependencies&fontSize=28&fontAlign=11.5&fontColor=EEF5FF&reversal=true&theme=holi)
 
 Project environment dependencies are listed in `requirements.txt`.
-
-![header](https://capsule-render.vercel.app/api?type=soft&color=293B5F&height=45&section=header&text=Configuration&fontSize=28&fontAlign=11.5&fontColor=EEF5FF&reversal=true&theme=holi)
-
 From the project root folder, run:
 
 ```bash
 pip install -r requirements.txt
 ```
+
+![header](https://capsule-render.vercel.app/api?type=soft&color=293B5F&height=45&section=header&text=Configuration&fontSize=28&fontAlign=11.5&fontColor=EEF5FF&reversal=true&theme=holi)
+
 
 ![header](https://capsule-render.vercel.app/api?type=soft&color=293B5F&height=45&section=header&text=Acknowladgment&fontSize=28&fontAlign=14&fontColor=EEF5FF&reversal=true&theme=holi)
 
