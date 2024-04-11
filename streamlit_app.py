@@ -3,6 +3,7 @@ import pandas as pd
 import altair as alt
 import ast 
 import matplotlib.pyplot as plt
+import seaborn as sns 
 
 st.set_page_config(
     page_title="Data Collection Lab - AI Requirments Analyzer",
