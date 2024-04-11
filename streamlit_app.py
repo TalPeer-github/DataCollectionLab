@@ -36,8 +36,8 @@ def plot_education(position_title):
     combined_education_counts = {**top_5_education, 'All Other': all_other_count}
 
     fig, ax = plt.subplots(figsize=(6, 4))
-    ax.pie(combined_education_counts.values(), labels=combined_education_counts.keys(), autopct='%1.1f%%',
-           startangle=140, colors=colors)
+    ax.pie(combined_education_counts.values(), labels=combined_education_counts.keys(), autopct='%1.2f%%',
+           startangle=-140, colors=colors,textprops={'fontsize': 10})
     ax.set_title(f"Educational Levels for {position_title}\n\n")
     ax.axis('equal')
     st.pyplot(fig)
