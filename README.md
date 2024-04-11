@@ -20,18 +20,17 @@ https://datacollectionlab-pmnez6c6fd3cimjg5oqtov.streamlit.app/
 
 ![header](https://capsule-render.vercel.app/api?type=soft&color=293B5F&height=45&section=header&text=Dependencies&fontSize=28&fontAlign=11.5&fontColor=EEF5FF&reversal=true&theme=holi)
 
-Project environment dependencies are listed in `src/environment.yml`.
+Project environment dependencies are listed in `requirements.txt`.
 
 ![header](https://capsule-render.vercel.app/api?type=soft&color=293B5F&height=45&section=header&text=Configuration&fontSize=28&fontAlign=11.5&fontColor=EEF5FF&reversal=true&theme=holi)
 
 From the project root folder, run:
 
 ```bash
-conda env create -f src/environment.yml
-conda activate lab-project
+pip install -r requirements.txt
 ```
 
 ![header](https://capsule-render.vercel.app/api?type=soft&color=293B5F&height=45&section=header&text=Acknowladgment&fontSize=28&fontAlign=14&fontColor=EEF5FF&reversal=true&theme=holi)
 
 This is the final project in Data Collection Lab,Factulty of Data and Descions Science, Technion. <br>
-All Rights Reserved
+All Rights Reserved.
