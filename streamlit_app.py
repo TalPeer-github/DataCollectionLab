@@ -15,7 +15,7 @@ st.title("Data Collection Lab - Interact with our data!")
 
 good_positions = ['Data Scientist', 'Data Engineer', 'Accountant', 'Software Architect','Java Developer','Facilities Project Manager','Licensed Therapist','Division Manager']
 df_reshaped = pd.read_csv('data/final_EM.csv')
-df_reshaped = df_reshaped[good_positions]
+df_reshaped = df_reshaped[df_reshaped['position'].isin(good_positions)]
 df_reshaped['education'] =df_reshaped['education'].apply(ast.literal_eval)
 df_reshaped['skills'] =df_reshaped['skills'].apply(ast.literal_eval)
 df_reshaped['years_of_experience'] =df_reshaped['years_of_experience'].apply(ast.literal_eval)
