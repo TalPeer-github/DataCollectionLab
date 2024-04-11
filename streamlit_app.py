@@ -11,7 +11,7 @@ st.set_page_config(
     initial_sidebar_state="expanded")
 
 alt.themes.enable("dark")
-
+st.set_page_config(layout='wide')
 
 df_reshaped = pd.read_csv('data/final_EM.csv')
 df_reshaped['education'] =df_reshaped['education'].apply(ast.literal_eval)
@@ -79,9 +79,15 @@ def plot_experience(position_title):
     axes[1].set_xlabel("Years of Experience")
 
     plt.tight_layout()
+    
     st.pyplot(fig)
 
-
-plot_education(selected_position)
-plot_skills(selected_position)
-plot_experience(selected_position)
+container1 = st.container(border=True)
+with container1:
+    plot_education(selected_position)
+container2 = st.container(border=True)
+with container2:
+    plot_skills(selected_position)
+container3 = st.container(border=True)
+with container3:
+    plot_experience(selected_position)
