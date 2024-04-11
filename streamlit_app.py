@@ -56,10 +56,10 @@ def plot_skills(position_title):
 
     fig, axes = plt.subplots(nrows=1, ncols=1, figsize=(15, 5))
 
-    axes[0].barh(skills_df['skill'], skills_df['p'], color='#A3816A', edgecolor='#0A065D', alpha=0.8)
-    axes[0].set_xlabel('Percentage (%)')
-    axes[0].set_ylabel('Skill')
-    axes[0].set_title(f'Top Skills for {position_title} (%)')
+    plt.barh(skills_df['skill'], skills_df['p'], color='#A3816A', edgecolor='#0A065D', alpha=0.8)
+    plt.xlabel('Percentage (%)')
+    plt.ylabel('Skill')
+    plt.title(f'Top Skills for {position_title} (%)')
 
     st.pyplot(fig)
 
