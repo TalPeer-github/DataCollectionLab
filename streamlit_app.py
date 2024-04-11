@@ -62,7 +62,7 @@ def plot_skills(position_title):
     axes[0].set_title(f'Top Skills for {position_title} (%)')
 
     education_counts = position_data['education'].iloc[0]
-    summary_text = generate_summary_text(skills_counts, education_counts)
+    summary_text = "Try"
     max_text_width = 50
     wrapped_text = textwrap.fill(summary_text, width=max_text_width)
     axes[1].axis('off')
