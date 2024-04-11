@@ -68,7 +68,7 @@ def plot_experience(position_title):
     years_of_experience = position_data['years_of_experience']
 
     fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(10, 5))
-    axes[0] = sns.kdeplot(data=position_data, x="years_of_experience",shade=True, palette=['#A3816A'],legend=True,linewidth=2,alpha=.6 )
+    axes[0] = sns.kdeplot(data=years_of_experience,shade=True, palette=['#A3816A'],legend=True,linewidth=2,alpha=.6 )
     #axes[0].hist(years_of_experience, bins=15, color='#A3816A', edgecolor='#0A065D')
     axes[0].set_title(f"Years of Experience for {position_title}\n\n")
     axes[0].set_xlabel("Years of Experience")
