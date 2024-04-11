@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 import ast 
-pip install matplotlib
 import matplotlib.pyplot as plt
 
 st.set_page_config(
