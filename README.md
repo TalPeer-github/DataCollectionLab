@@ -29,7 +29,10 @@ pip install -r requirements.txt
 
 ![header](https://capsule-render.vercel.app/api?type=soft&color=293B5F&height=45&section=header&text=Configuration&fontSize=28&fontAlign=11.5&fontColor=EEF5FF&reversal=true&theme=holi)
 
-Project results plots can be find in 'project_results.ipynb' notebook
+
+You can access the project results plots in the 'project_results.ipynb' notebook. <br>
+Additionally, the project app configuration code is based on this notebook, enhancing the user interface experience, especially for selecting different positions (from selected list, not including Wordcloud for skills). <br>
+Feel free to modify the user_input variable in the 'project_results.ipynb' notebook to explore the results for various positions.
 
 ![header](https://capsule-render.vercel.app/api?type=soft&color=293B5F&height=45&section=header&text=Acknowladgment&fontSize=28&fontAlign=14&fontColor=EEF5FF&reversal=true&theme=holi)
 
