@@ -11,8 +11,8 @@ st.set_page_config(
     initial_sidebar_state="expanded")
 
 alt.themes.enable("dark")
-st.title("Data Collection group 37 - Time to explore our data!")
-
+st.title("Data Collection Lab - group 37")
+st.header("Explore our results!")
 good_positions = ['Data Scientist', 'Data Engineer', 'Accountant', 'Software Architect','Java Developer','Facilities Project Manager','Licensed Therapist','Division Manager']
 position_summaries = {
     'Data Scientist': {
