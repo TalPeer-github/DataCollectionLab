@@ -37,7 +37,7 @@ def plot_education(position_title):
     fig, ax = plt.subplots(figsize=(6, 4))
     ax.pie(combined_education_counts.values(), labels=combined_education_counts.keys(), autopct='%1.1f%%',
            startangle=140, colors=colors)
-    ax.set_title(f"Educational Levels for {position_title}")
+    ax.set_title(f"Educational Levels for {position_title}\n\n")
     ax.axis('equal')
     st.pyplot(fig)
 
@@ -58,7 +58,7 @@ def plot_skills(position_title):
     plt.barh(skills_df['skill'], skills_df['p'], color='#A3816A', edgecolor='#0A065D', alpha=0.8)
     plt.xlabel('Percentage (%)')
     plt.ylabel('Skill')
-    plt.title(f'Top Skills for {position_title} (%)')
+    plt.title(f'Top Skills for {position_title} (%)\n\n')
 
     st.pyplot(fig)
 
@@ -69,12 +69,12 @@ def plot_experience(position_title):
     fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(10, 5))
 
     axes[0].hist(years_of_experience, bins=15, color='#A3816A', edgecolor='#0A065D')
-    axes[0].set_title(f"Years of Experience for {position_title}")
+    axes[0].set_title(f"Years of Experience for {position_title}\n\n")
     axes[0].set_xlabel("Years of Experience")
     axes[0].set_ylabel("Frequency")
 
     axes[1].boxplot(years_of_experience, vert=False)
-    axes[1].set_title(f"Years of Experience for {position_title}")
+    axes[1].set_title(f"Years of Experience for {position_title} \n\n")
     axes[1].set_xlabel("Years of Experience")
 
     plt.tight_layout()
