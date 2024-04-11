@@ -65,19 +65,27 @@ def plot_skills(position_title):
 
 def plot_experience(position_title):
     position_data = df_reshaped[df_reshaped['position'] == position_title]
-    years_of_experience = position_data['years_of_experience']
+    # years_of_experience = position_data['years_of_experience']
 
     fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(10, 5))
-    axes[0] = sns.kdeplot(data=position_data,x='years_of_experience',shade=True, palette=['#A3816A'],legend=True,linewidth=2,alpha=.6 )
-    #axes[0].hist(years_of_experience, bins=15, color='#A3816A', edgecolor='#0A065D')
-    axes[0].set_title(f"Years of Experience for {position_title}\n\n")
-    axes[0].set_xlabel("Years of Experience")
-    axes[0].set_ylabel("Frequency")
+    # axes[0] = sns.kdeplot(data=position_data,x='years_of_experience',shade=True, palette=['#A3816A'],legend=True,linewidth=2,alpha=.6 )
+    # #axes[0].hist(years_of_experience, bins=15, color='#A3816A', edgecolor='#0A065D')
+    # axes[0].set_title(f"Years of Experience for {position_title}\n\n")
+    # axes[0].set_xlabel("Years of Experience")
+    # axes[0].set_ylabel("Frequency")
 
-    axes[1] = boxplot(years_of_experience, vert=False)
-    axes[1].set_title(f"Years of Experience for {position_title} \n\n")
-    axes[1].set_xlabel("Years of Experience")
+    # axes[1] = boxplot(years_of_experience, vert=False)
+    # axes[1].set_title(f"Years of Experience for {position_title} \n\n")
+    # axes[1].set_xlabel("Years of Experience")
+        years_of_experience = position_data['years_of_experience'].explode().reset_index()
+        sns.kdeplot(data=years_of_experience,x= 'years_of_experience', ax=axes[0],palette=['#A3816A'])
+        axes[0].set_title(f"Years of Experience for {position_title}")
+        axes[0].set_xlabel("Years of Experience")
+        axes[0].set_ylabel("Frequency")
 
+        sns.boxplot(years_of_experience['years_of_experience'],ax=axes[1], vert=True,linewidth=1.5,saturation=0.8,medianprops={"color": "black", "linewidth": 1 ,"linestyle":'--'})
+        axes[1].set_title(f"Years of Experience for {position_title}")
+        axes[1].set_xlabel("Years of Experience")
     plt.tight_layout()
     
     st.pyplot(fig)
