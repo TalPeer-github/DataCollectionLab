@@ -74,7 +74,7 @@ def plot_experience(position_title):
     axes[0].set_xlabel("Years of Experience")
     axes[0].set_ylabel("Frequency")
 
-    sns.boxplot(years_of_experience['years_of_experience'],ax=axes[1], vert=True,palette=['#9BBEC8'],linewidth=1.5,saturation=0.8,medianprops={"color": "black", "linewidth": 1 ,"linestyle":'--'})
+    sns.boxplot(years_of_experience['years_of_experience'],ax=axes[1], vert=True,palette=['#9BBEC8'],linewidth=1.5,saturation=1,medianprops={"color": "#164863", "linewidth": 1 ,"linestyle":'--'})
     axes[1].set_title(f"Years of Experience for {position_title}")
     axes[1].set_xlabel("Years of Experience")
     plt.tight_layout()
