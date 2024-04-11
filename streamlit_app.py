@@ -78,7 +78,7 @@ def plot_experience(position_title):
     # axes[1].set_title(f"Years of Experience for {position_title} \n\n")
     # axes[1].set_xlabel("Years of Experience")
     years_of_experience = position_data['years_of_experience'].explode().reset_index()
-    sns.kdeplot(data=years_of_experience,x= 'years_of_experience', ax=axes[0],palette=['#A3816A'])
+    sns.kdeplot(data=years_of_experience,x= 'years_of_experience', ax=axes[0],palette=['#A3816A'],shade=True,linewidth=2,alpha=.6)
     axes[0].set_title(f"Years of Experience for {position_title}")
     axes[0].set_xlabel("Years of Experience")
     axes[0].set_ylabel("Frequency")
