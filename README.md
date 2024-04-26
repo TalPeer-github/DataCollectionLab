@@ -16,7 +16,6 @@
 In this project, we aimed to develop an AI-powered Profile Analyzer tool that empowers LinkedIn members <br>to make informed decisions about their career paths and skill development strategies.<br>
 
 ![header](https://capsule-render.vercel.app/api?type=transparent&color=293B5F&height=45&section=header&text=Explore%20our%20results%20with%20streamlit%20app:&fontSize=20&fontAlign=21&fontColor=293B5F&reversal=true&theme=holi)
-[https://datacollectionlab-pmnez6c6fd3cimjg5oqtov.streamlit.app/](https://datacollectionlab-pmnez6c6fd3cimjg5oqtov.streamlit.app/)
 
 [Group 37 - App Demo](https://datacollectionlab-pmnez6c6fd3cimjg5oqtov.streamlit.app/?embed_options=dark_theme)
 ![header](https://capsule-render.vercel.app/api?type=soft&color=293B5F&height=45&section=header&text=Dependencies&fontSize=28&fontAlign=11.5&fontColor=EEF5FF&reversal=true&theme=holi)
