@@ -1,2 +1,8 @@
 matplotlib==3.8
 seaborn
+numpy
+pandas
+thefuzz
+polyfuzz
+statmodels
+gemini
