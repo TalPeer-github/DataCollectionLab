@@ -37,7 +37,7 @@ Additionally, the project app configuration code is based on this notebook, enha
 Feel free to modify the user_input variable in the 'project_results.ipynb' notebook to explore the results for various positions. <br><br>
 **All project files are available in 'src/' dir** <br>
 
-![header](https://capsule-render.vercel.app/api?type=soft&color=293B5F&height=45&section=header&text=Acknowladgment&fontSize=28&fontAlign=14&fontColor=EEF5FF&reversal=true&theme=holi)
+![header](https://capsule-render.vercel.app/api?type=soft&color=293B5F&height=45&section=header&text=Acknowledgment&fontSize=28&fontAlign=14&fontColor=EEF5FF&reversal=true&theme=holi)
 
 This is the final project in Data Collection Lab,Factulty of Data and Descions Science, Technion. <br>
 All Rights Reserved.
